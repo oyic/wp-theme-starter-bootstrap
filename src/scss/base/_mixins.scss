@@ -1,5 +1,11 @@
-@mixins el($name){
-	&__#(${name}){
-		@content
-	}
+@mixin el($name) {
+  @at-root #{&}__#{$name} {
+    @content;
+  }
+}
+
+@mixin mod($name) {
+  @at-root #{&}--#{$name} {
+    @content;
+  }
 }

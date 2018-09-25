@@ -1,4 +1,5 @@
 const path = require('path');
+// const webpack = require('webpack');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -32,14 +33,21 @@ module.exports = {
 		]
 	},
 	plugins:[
-		new WebpackNotifierPlugin({title:'Yo Successful Build, fool!',
-						excludeWarnings: true,
-						contentImage: path.join(__dirname, 'wp-logo.png')}),
+		
 		// extract css into dedicated file
-    new MiniCssExtractPlugin({
-      filename: 'css/app.css',
-      // publicPath:  "/dist"
-    })
+	    new MiniCssExtractPlugin({
+	      filename: 'css/app.css',
+	      // publicPath:  "/dist"
+	    }),
+	    // new webpack.ProvidePlugin({
+     //            $: "jquery",
+     //            jQuery: "jquery",
+     //            "window.jQuery": "jquery"
+     //        })
+     new WebpackNotifierPlugin({title:'Compiling..., fool!',
+						excludeWarnings: true,
+						alwaysNotify:true,
+						contentImage: path.join(__dirname, 'wp-logo.png')}),
 
 	],
 	optimization:{
