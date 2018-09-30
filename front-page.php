@@ -4,9 +4,17 @@
 	 */
  ?>
  <?php get_header(); ?>
-<!-- <div class="container"> -->
-		 <div class="slider-hero">
+
+	<main class="page page--front">
+		 <div class="page__slider">
 		 	
-		 </div> 
-<!-- </div>  container -->
+		 </div>
+	</main>
+	<div class="container">
+		<div class="section section--bordered">
+			<h1 class="section__title section__title--front">
+				Section Title
+			</h1>
+		</div>
+	</div>
 <?php get_footer(); ?>
