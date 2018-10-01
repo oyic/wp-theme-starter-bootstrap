@@ -1,6 +1,8 @@
 # My Starter WP Theme Starter Webpack Package :metal:
-This is a package specifically for WordPress Development in mac environment.
 [![Build Status](https://semaphoreci.com/api/v1/oyic/wp-theme-starter/branches/master/badge.svg)](https://semaphoreci.com/oyic/wp-theme-starter)
+
+This is a package specifically for WordPress Development in mac environment.
+
 ## Requirements
 1. npm or yarn (yarn preffered) :metal:
 
