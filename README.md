@@ -1,8 +1,8 @@
-# My Starter WP Theme Starter Webpack Package
+# My Starter WP Theme Starter Webpack Package :metal:
 This is a package specifically for WordPress Development in mac environment.
 
 ## Requirements
-1. npm or yarn (yarn preffered)
+1. npm or yarn (yarn preffered) :metal:
 
 ## Installation
 1.  Clone `git clone https://github.com/oyic/wp-theme-starter.git` to your theme folder.
