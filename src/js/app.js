@@ -3,6 +3,7 @@
     import map from "./map";
     $(document).ready(function(){
     	console.log('hello there?');
+    	alert('Hello World')
     	//********
     	//wpVars = is define in wp_localize_script can be use directly here as wpVar.logo
     	//********

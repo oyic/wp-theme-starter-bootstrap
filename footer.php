@@ -1,3 +1,8 @@
+<?php
+/**
+ * @default footer
+ */
+?>
 <!-- </div>  container -->
 			<footer>
 				

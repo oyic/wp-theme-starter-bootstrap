@@ -4,7 +4,7 @@
 	 */
  ?>
  <?php get_header(); ?>
-
+	
 	<main class="page page--front">
 		 <div class="page__slider">
 		 	

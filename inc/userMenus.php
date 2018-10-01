@@ -19,4 +19,14 @@ function remove_menus()
   endif;
 }
 add_action( 'admin_menu', 'remove_menus' );
-?>
+
+// Multi-Site hide admin menu if not ME
+function custom_admin_bar_render() {
+    $current_user = wp_get_current_user();
+    global $wp_admin_bar;
+    if ( strpos($current_user->user_email, 'oyic@outlook.com') === false ) {
+      $wp_admin_bar->remove_menu('network-admin-p');
+      $wp_admin_bar->remove_menu('network-admin-o');
+    }
+  }
+  add_action( 'wp_before_admin_bar_render', 'custom_admin_bar_render' );
