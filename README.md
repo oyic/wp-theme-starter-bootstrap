@@ -1,6 +1,5 @@
 # My Starter WP Theme Starter Webpack Package :metal:
-[![Build Status](https://semaphoreci.com/api/v1/oyic/wp-theme-starter/branches/master/badge.svg)](https://semaphoreci.com/oyic/wp-theme-starter)
-
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
 This is a package specifically for WordPress Development in mac environment.
 
 ## Requirements
