@@ -1,5 +1,6 @@
 # My Starter WP Theme Starter Webpack Package :metal:
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
+
 This is a package specifically for WordPress Development in mac environment.
 
 ## Requirements
@@ -18,5 +19,8 @@ This is a package specifically for WordPress Development in mac environment.
 1. Bootstrap 4
 2. FontAwesome Free
 3. Slick Carousel
+
+### Notes:
+* Use BEM on styling by ```@include el(element)``` & ```@include mod(modifer)```
 
 
