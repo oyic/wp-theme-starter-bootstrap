@@ -1,1 +1,1 @@
-# My Starter WP Theme Starter Package
+# My Starter WP Theme Starter Webpack Package
