@@ -1,6 +1,6 @@
 <?php 
 	/**
-	 * @Default page Template
+	 * @ Default page Template
 	 */
  ?>
  <?php get_header(); ?>
