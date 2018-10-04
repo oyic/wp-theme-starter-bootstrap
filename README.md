@@ -21,6 +21,7 @@ This is a package specifically for WordPress Development in mac environment.
 3. Slick Carousel
 4. [AOS - Animate On Scroll](https://github.com/michalsnik/aos "AOS")
 5. [Parallax-Scroll](https://www.npmjs.com/package/parallax-scroll "Parallax-Scroll")
+6. Added [TGPMA](https://packagist.org/packages/tgmpa/tgm-plugin-activation) via composer (yeah composer!) :punch:
 
 ### Notes:
 * Use BEM on styling by ```@include el(element)``` & ```@include mod(modifer)```
