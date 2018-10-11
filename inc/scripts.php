@@ -11,18 +11,11 @@ if(!function_exists('custom_enqueue_scripts')):
 			// default style.css
 			wp_enqueue_style( "wp-styles",get_stylesheet_uri());
 
-			// This grabs the latest hash by webpack
-			$cssFilePath = glob( get_template_directory() . '/dist/css/app.*.css' );
-			if(count($cssFilePath)>0):
-				$cssFileURI = get_template_directory_uri() . '/dist/css/' . basename($cssFilePath[0] );	
-				wp_enqueue_style( 'app',$cssFileURI  , null, THEME_VERSION, 'all' );
-			endif;
-
-			$jsFilePath = glob( get_template_directory() . '/dist/js/bundle.*.js' );
-			if(count($jsFilePath)):
-				$jsFileURI = get_template_directory_uri() . '/dist/js/' . basename($jsFilePath[0] );
+			$cssFileURI = get_template_directory() . '/dist/css/app.css';
+			wp_enqueue_style( 'app',$cssFileURI  , null, THEME_VERSION, 'all' );
+		
+			$jsFileURI = get_template_directory() . '/dist/js/bundle.js';
 				wp_register_script('app', $jsFileURI, null, THEME_VERSION, true);
-			endif;
 			// Add Google Map API on contact page-contact
 			
 			wp_enqueue_script('google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC1CBEg-Aw2vSumF7a6Y1VmOYhrI6CTKxQ&callback=initMap', ['app'], '', true);

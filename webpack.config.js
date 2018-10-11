@@ -9,12 +9,11 @@ const imageminMozjpeg = require('imagemin-mozjpeg')
 const CleanDistFolder = require('clean-webpack-plugin')
 const glob = require('glob')
 
-
 const devMode = process.env.NODE_ENV !== 'production'
 module.exports = {
 	entry:['./src/js/app.js','./src/scss/app.scss'],
 	output:{
-		filename:'js/bundle.[hash].js',
+		filename:'js/bundle.js',
 		path:path.resolve(__dirname,'dist')
 	},
 	module:{
@@ -35,9 +34,14 @@ module.exports = {
 		          exclude: /node_modules/,
         		 use: [MiniCssExtractPlugin.loader, 'css-loader','postcss-loader', 'sass-loader'] 
 			},
+			{
+		         test: /\.(css)$/,
+		          exclude: /node_modules/,
+        		 use: [MiniCssExtractPlugin.loader, 'css-loader','postcss-loader'] 
+			},
 			// test for sass
 			{
-		         test: /\.(ttf|eot|woff)$/,
+		         test: /\.(ttf|eot|svg|woff2|woff)$/,
 				 loader: 'file-loader',
 				  options: {
 				    name: 'fonts/[name].[ext]',
@@ -70,7 +74,7 @@ module.exports = {
 		
 		// extract css into dedicated file
 	    new MiniCssExtractPlugin({
-	      filename: 'css/app.[hash].css',
+	      filename: 'css/app.css',
 	      // publicPath:  "/dist"
 	    }),
 	    new webpack.ProvidePlugin({
@@ -83,20 +87,20 @@ module.exports = {
 						excludeWarnings: true,
 						alwaysNotify:true,
 						contentImage: path.join(__dirname, 'wp-logo.png')}),
-     new ImageminPlugin({
-      externalImages: {
-        context: 'src', // Important! This tells the plugin where to "base" the paths at
-        sources: glob.sync('src/images/**/*.*'),
-        destination: 'dist/images',
-        fileName: '[name].[ext]' // (filePath) => filePath.replace('jpg', 'webp') is also possible
-      },
-    }),
-     new CleanDistFolder(['./dist/js/*','./dist/css/*'],{ verbose: false })
 
 	],
 	optimization:{
 		
 		minimizer:[
+				new ImageminPlugin({
+			      externalImages: {
+			        context: 'src', // Important! This tells the plugin where to "base" the paths at
+			        sources: glob.sync('src/images/**/*.*'),
+			        destination: 'dist/images',
+			        fileName: '[name].[ext]' // (filePath) => filePath.replace('jpg', 'webp') is also possible
+			      },
+			    }),
+     			new CleanDistFolder(['./dist/js/*','./dist/css/*'],{ verbose: false }),
 				new OptimizeCSSAssetsPlugin({}),
 				new UglifyJSPlugin({}),
 			]	
