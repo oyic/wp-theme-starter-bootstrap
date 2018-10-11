@@ -32,6 +32,7 @@ module.exports = {
 			// test for sass
 			{
 		         test: /\.(sass|scss)$/,
+		          exclude: /node_modules/,
         		 use: [MiniCssExtractPlugin.loader, 'css-loader','postcss-loader', 'sass-loader'] 
 			},
 			// test for sass
