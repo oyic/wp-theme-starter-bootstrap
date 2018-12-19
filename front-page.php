@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="section section--bordered">
 			<h1 class="section__title section__title--front">
-				Section Title
+				<a href="#" class="fancy-underline">My Fancy Underline</a>
 			</h1>
 		</div>
 	</div>

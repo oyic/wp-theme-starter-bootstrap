@@ -1,0 +1,223 @@
+{
+    "key": "group_5bf1c8e5a364b",
+    "title": "Header Settings",
+    "fields": [
+        {
+            "key": "field_5bf1c9d2e5eca",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "instructions": "Main Site Logo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5bf1c9e3e5ecb",
+            "label": "Phone",
+            "name": "phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bf1ca09e5ecc",
+            "label": "Social Icons",
+            "name": "social_icons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Social Network",
+            "sub_fields": [
+                {
+                    "key": "field_5bf1ca1be5ecd",
+                    "label": "Social Network",
+                    "name": "social_network",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5bf1ca40e5ece",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "flexible_content",
+                    "instructions": "Icon can be an image icon or a font-awesome class",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layouts": {
+                        "5bf1ca4df12d4": {
+                            "key": "5bf1ca4df12d4",
+                            "name": "image_icon",
+                            "label": "Image Icon",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5bf1ca70e5ecf",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5bf1ca99e5ed0": {
+                            "key": "layout_5bf1ca99e5ed0",
+                            "name": "fontawesome",
+                            "label": "Fontawesome",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5bf1caafe5ed1",
+                                    "label": "FontAwesome Class",
+                                    "name": "fontawesome_class",
+                                    "type": "text",
+                                    "instructions": "ie. fas fa-plus",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        }
+                    },
+                    "button_label": "Add Icon Type",
+                    "min": "",
+                    "max": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5bf1cafbe5ed2",
+            "label": "Email",
+            "name": "email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5bf1d6da6e630",
+            "label": "GTM Key",
+            "name": "gtm_key",
+            "type": "text",
+            "instructions": "This is key Value the Google Tag Manager key: ie GTM-SAMP123",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-header"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1544894793
+}
