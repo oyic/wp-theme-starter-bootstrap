@@ -30,7 +30,7 @@
 			   ]);
 			   ?>
 			</nav> -->
-			<?php clean_custom_menu('primary');?>
+			<?php //clean_custom_menu('primary');?>
 
 		</header>	
 		<!-- <div class="container"> -->

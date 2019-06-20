@@ -1,12 +1,15 @@
 <?php 
+
+
 	/**
 	 * @Home page Template
 	 */
  ?>
+
  <?php get_header(); ?>
 	<main class="page page--front">
 		 <div class="page__slider">
-		 	
+		 	<?php Oyic\Utils\Punk::anchor_link(get_the_permalink(),get_the_title()); ?>
 		 </div>
 	</main>
 	<div class="container">

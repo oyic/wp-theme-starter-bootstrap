@@ -1,7 +1,5 @@
 <?php 
 
-require_once get_template_directory().'/vendor/autoload.php';
-
 add_action( 'tgmpa_register', 'my_custom_theme_register_required_plugins' );
 
 function my_custom_theme_register_required_plugins() {
@@ -15,8 +13,21 @@ function my_custom_theme_register_required_plugins() {
 	      'slug'        => 'advanced-custom-fields-pro',
 	      'required'    => true,
 	       'external_url'  => 'https://s3-eu-west-1.amazonaws.com/knightdigital/plugins/advanced-custom-fields-pro.zip',
-      'source'    => 'https://s3-eu-west-1.amazonaws.com/knightdigital/plugins/advanced-custom-fields-pro.zip',
+      		'source'    => 'https://s3-eu-west-1.amazonaws.com/knightdigital/plugins/advanced-custom-fields-pro.zip',
 	    ),
+	[
+		'name' =>"PODS Framework",
+		'slug' =>"pods",
+		'required'=>true,
+		'external_url'=>"https://github.com/pods-framework/pods.git",
+		'is_callable'=>"pods"
+	],
+	[
+		'name'=>"Intuitive Custom Post Order",
+		'slug' =>"intuitive-custom-post-order",
+		'required'=>true,
+		'is_callable'=>"Intuitive Custom Post Order"
+	]
 
 		// This is an example of how to include a plugin from an arbitrary external source in your theme.
 		// array(
@@ -49,11 +60,11 @@ function my_custom_theme_register_required_plugins() {
 		// By setting 'is_callable' to either a function from that plugin or a class method
 		// `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
 		// recognize the plugin as being installed.
-		array(
-			'name'        => 'WordPress SEO by Yoast',
-			'slug'        => 'wordpress-seo',
-			'is_callable' => 'wpseo_init',
-		),
+		// array(
+		// 	'name'        => 'WordPress SEO by Yoast',
+		// 	'slug'        => 'wordpress-seo',
+		// 	'is_callable' => 'wpseo_init',
+		// ),
 
 	);
 
